@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+  font-weight: 600;
+}
+
+.center {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+header {
+  background-color: white;
+  padding: 20px 0;
+  border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.logo {
+  color: #be1eff;
+}
+
+.logo h2 {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.menu {
+  width: 80%;
+  text-align: right;
+}
+
+.menu a {
+  color: #be1eff;
+  font-size: 14px;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: 0.2s all;
+}
+
+.menu a:hover {
+  color: #9717ca;
+}
+
+/*
+Section Main
+*/
+
+.main__cta {
+  width: 100%;
+  margin: 60px 0;
+  text-align: center;
+}
+
+.main__cta h2 {
+  color: #be1eff;
+  font-size: 40px;
+}
+
+.main__cta p {
+  color: gray;
+  font-size: 19px;
+  margin: 10px 0;
+}
+
+.main__cta button {
+  background-color: #be1eff;
+  display: inline-block;
+  padding: 8px 16px;
+  color: white;
+  border-radius: 6px;
+  font-size: 16px;
+  border: 0;
+  cursor: pointer;
+}
+
+.main__cta button:hover {
+  background-color: #9717ca;
+  transition: 0.2s all;
+}
+
+.diferenciais {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.diferencial-single {
+  border-radius: 10px;
+  background-color: rgb(223, 223, 223);
+  width: 23%;
+  margin-right: 2%;
+  padding: 50px 20px;
+}
+
+.diferencial-single i {
+  color: #be1eff;
+  font-size: 23px;
+}
+
+.diferencial-single h2 {
+  color: #be1eff;
+  margin: 10px 0;
+  font-size: 17px;
+}
+
+.diferencial-single p {
+  color: gray;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+section.sobre {
+  padding: 80px 0;
+}
+
+.chamada-sobre {
+  width: 100%;
+  text-align: center;
+}
+
+.chamada-sobre h2 {
+  color: #be1eff;
+  text-transform: uppercase;
+}
+
+.chamada-sobre p {
+  font-size: 14px;
+  color: gray;
+  margin: 10px 0;
+}
+
+.conteudo-sobre {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.conteudo-sobre p {
+  margin: 0 20px;
+  color: #444444;
+}
+
+.conteudo-sobre span {
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.conteudo-sobre i {
+  color: #be1eff;
+}
+
+.menu-items {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  border-bottom: 2px solid #be1eff;
+  display: block;
+  opacity: 0;
+  transition: 1s;
+  font-size: 20px;
+}
+
+.menu-items.show {
+  opacity: 1;
+}
+
+.menu-items.hide {
+  opacity: 0;
+}
+
+.menu-items a {
+  display: block;
+  text-decoration: none;
+  color: #be1eff;
+  margin: 10px;
+  background-color: rgb(241, 241, 241);
+  padding: 20px 0;
+}
+
+section.contato {
+  padding: 80px 0;
+}
+
+.chamada-contato {
+  width: 100%;
+  text-align: center;
+}
+
+.chamada-contato h2 {
+  color: #be1eff;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+.conteudo-contato {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.chamada-contato button {
+  background-color: #be1eff;
+  display: inline-block;
+  padding: 8px 16px;
+  color: white;
+  border-radius: 6px;
+  font-size: 16px;
+  border: 0;
+  cursor: pointer;
+}
+
+.chamada-contato button:hover {
+  background-color: #9717ca;
+  transition: 0.2s all;
+}
+
+@media screen and (max-width: 768px) {
+  .diferencial-single {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .logo {
+    width: 20%;
+  }
+
+  .menu-mobile {
+    width: 80%;
+    text-align: right;
+    display: block;
+  }
+
+  .menu-mobile i {
+    cursor: pointer;
+    font-size: 23px;
+    margin-top: 8px;
+  }
+
+  .conteudo-sobre p {
+    width: 100%;
+    margin: 20px 20px;
+  }
+}

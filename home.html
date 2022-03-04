@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FourHound</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="shortcut icon" href="Imagens/4hound_icon.png" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <div class="center">
+        <div class="logo">
+          <h2>FourHound</h2>
+        </div>
+        <div class="menu">
+          <a href="#home"> HOME </a>
+          <a href="#sobre"> SOBRE </a>
+          <a href="#"> LIVESTREAM </a>
+          <a href="#contato"> CONTATO </a>
+        </div>
+        <div class="menu-mobile">
+          <i class="fa-solid fa-bars menu-mobile-icon"></i>
+          <div class="menu-items">
+            <a href="#home"> HOME </a>
+            <a href="#sobre"> SOBRE </a>
+            <a href=""> LIVESTREAM </a>
+            <a href="#contato"> CONTATO </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="main" id="home">
+      <div class="center">
+        <div class="main__cta">
+          <h2>FOURHOUND</h2>
+          <p>ORGANIZAÇÃO DE ESPORTES ELETRÔNICOS</p>
+          <button>Sobre Nós</button>
+        </div>
+        <div class="diferenciais">
+          <div class="diferencial-single">
+            <i class="fa-solid fa-bolt"></i>
+            <h2>Campeonatos</h2>
+            <p>
+              A Organização FourHound banca campeonatos para os times em
+              diversas plataformas, exemplos: Faceit, GamersClub, etc.
+            </p>
+          </div>
+          <div class="diferencial-single">
+            <i class="fa-solid fa-check"></i>
+            <h2>Organização</h2>
+            <p>
+              Contamos com um cronograma de treino adequado considerando o
+              horário disponível que os jogadores possuem.
+            </p>
+          </div>
+          <div class="diferencial-single">
+            <i class="fa-solid fa-users"></i>
+            <h2>Equipe</h2>
+            <p>
+              Temos uma equipe qualificada, contamos com designers próprios,
+              administradores de time, ajudantes, coach's para os times.
+            </p>
+          </div>
+          <div class="diferencial-single">
+            <i class="fa-solid fa-microphone"></i>
+            <h2>Comunicação</h2>
+            <p>
+              Temos servidores no discord para facilitar a comunicação entre os
+              jogadores durante uma partida.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--main-->
+
+    <section class="sobre" id="sobre">
+      <div class="center">
+        <div class="chamada-sobre">
+          <h2>Sobre a FourHound</h2>
+          <p>Organização de esportes eletrônicos.</p>
+        </div>
+        <div class="conteudo-sobre">
+          <p>
+            A FourHound é uma organização fundada com o objetivo de desenvolver
+            streamers e jogadores jovens. Estamos sempre buscando melhorar a
+            qualidade e tentando inovar no cenário!
+
+            <br />
+
+            <span
+              ><i class="fa-solid fa-check-double"></i>
+                Foco em desenvolvimento de streamers e jogadores jovens.</i
+              ></span
+            >
+            <span
+            ><i class="fa-solid fa-check-double"></i>
+            Buscando sempre inovar!</i
+            ></span
+          >
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--sobre-->
+
+
+    <section class="contato" id="contato">
+      <div class="center">
+        <div class="chamada-contato">
+          <h2>Converse Conosco</h2>
+          <a href="mailto:contato.fourhoundgg@gmail.com">
+            <button>Email</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+
+    <script>
+      var el = document.querySelector('.menu-mobile-icon')
+
+      el.addEventListener('click', () => {
+        // Queremos mostrar o menu
+        var menuItems = document.querySelector('.menu-items')
+        if(menuItems.classList.contains('show')){
+          menuItems.classList.add('hide')
+          menuItems.classList.remove('show')
+        } else {
+          menuItems.classList.add('show')
+          menuItems.classList.remove('hide')
+        }
+      })
+
+    </script>
+    <script
+      src="https://kit.fontawesome.com/ad8daf8583.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
